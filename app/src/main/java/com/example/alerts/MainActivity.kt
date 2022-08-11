@@ -1,10 +1,9 @@
 package com.example.alerts
 
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.Spinner
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.alerts.NetworkAdapter.DownloadImage
+import com.example.alerts.networkAdapter.DownloadImage
 import kotlinx.android.synthetic.main.activity_main.*
 
 

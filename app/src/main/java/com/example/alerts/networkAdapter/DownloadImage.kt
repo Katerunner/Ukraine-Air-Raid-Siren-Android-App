@@ -1,9 +1,8 @@
-package com.example.alerts.NetworkAdapter
+package com.example.alerts.networkAdapter
 
 import android.graphics.drawable.Drawable
 import android.os.AsyncTask
 import android.widget.ImageView
-import kotlinx.android.synthetic.main.activity_main.*
 import java.io.InputStream
 import java.net.URL
 
