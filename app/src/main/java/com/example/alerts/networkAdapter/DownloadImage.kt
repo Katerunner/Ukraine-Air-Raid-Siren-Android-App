@@ -7,13 +7,13 @@ import java.io.InputStream
 import java.net.URL
 
 class DownloadImage {
-    fun setImageViewURLDrawable(imageView: ImageView, url: String) {
-        class DownloadImageTask : AsyncTask<Int?, Void?, Int>() {
-            private var drawable: Drawable? = null
+    var drawable: Drawable? = null
+    fun setImageViewURLDrawable(url: String): Drawable? {
+
+        class DownloadImageTask() : AsyncTask<Int?, Void?, Int>() {
 
             override fun onPostExecute(result: Int) {
                 super.onPostExecute(result)
-                imageView.setImageDrawable(drawable)
             }
 
             override fun doInBackground(vararg p0: Int?): Int {
@@ -32,6 +32,9 @@ class DownloadImage {
             }
         }
 
-        DownloadImageTask().execute()
+        var task = DownloadImageTask()
+        task.execute()
+
+        return drawable
     }
 }
